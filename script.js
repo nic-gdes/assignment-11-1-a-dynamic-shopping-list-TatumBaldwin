@@ -22,6 +22,7 @@ const newListItem = document.createElement('li');
 
 // Create a span inside of the new list item
 
+const newSpan = document.createElement('span');
 // Create a button to remove list items
 
 // Add the text "remove" to the button
