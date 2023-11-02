@@ -1,5 +1,8 @@
 // Pull the input, form and ul from the html
 
+const list = document.querySelector('#list');
+const form = document.querySelector('#addItem');
+const input = document.querySelector('#itemToAdd');
 
 // add event listener to the form to look for clicks
 
