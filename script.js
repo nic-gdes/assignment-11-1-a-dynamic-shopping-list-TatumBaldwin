@@ -25,10 +25,11 @@ form.addEventListener('submit', function(event) {
     // Create a span inside of the new list item
 
     const newSpan = document.createElement('span');
-
+    newSpan.textContent = newListItem;
+    newSpan.appendChild(newListItem);
 
     // Create a button to remove list items
-
+    const removeBtn = document.createElement('button');
 
 
     // Add the text "remove" to the button
