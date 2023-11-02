@@ -40,14 +40,18 @@ form.addEventListener('submit', function(event) {
 
     removeBtn.addEventListener('click', function(event) {
 
-
-
-
     // target the click event
+
+        const targetClick = event.target;
 
     // target the button
 
+        const parent = removeBtn.parentNode;
+
     // remove list item
+
+        
+
     })
 })
 // add the remove button to the new list item
