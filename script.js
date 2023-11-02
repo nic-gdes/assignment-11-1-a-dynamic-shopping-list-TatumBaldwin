@@ -14,7 +14,11 @@ form.addEventListener('submit', function(event) {
 
 // Assign a variable to the user input
 
+const value = input.value;
+
 // Create a new list item
+
+const newListItem = document.createElement('li');
 
 // Create a span inside of the new list item
 
