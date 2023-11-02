@@ -42,11 +42,11 @@ form.addEventListener('submit', function(event) {
 
     // target the click event
 
-        const targetClick = event.target;
+        const btn = event.target;
 
     // target the button
 
-        const parent = removeBtn.parentNode;
+        const parent = btn.parentNode;
 
     // remove list item
 
@@ -58,6 +58,10 @@ form.addEventListener('submit', function(event) {
 // add the remove button to the new list item
 
 newListItem.appendChild(removeBtn);
+
+//append the child
+
+list.appendChild(newListItem);
 
 // clear the input after submission
 
