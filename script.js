@@ -29,19 +29,26 @@ form.addEventListener('submit', function(event) {
     newSpan.appendChild(newListItem);
 
     // Create a button to remove list items
-    const removeBtn = document.createElement('button');
 
+    const removeBtn = document.createElement('button');
 
     // Add the text "remove" to the button
 
+    removeBtn.textContent = "remove";
+
     // Add event listener to watch the remove button for clicks
+
+    removeBtn.addEventListener('click', function(event) {
+
+
+
 
     // target the click event
 
     // target the button
 
     // remove list item
-
+    })
 })
 // add the remove button to the new list item
 
