@@ -4,30 +4,36 @@ const list = document.querySelector('#list');
 const form = document.querySelector('#addItem');
 const input = document.querySelector('#itemToAdd');
 
+
+
 // add event listener to the form to look for clicks
 
 form.addEventListener('submit', function(event) {
   
-// remove the function's default
+    // remove the function's default
 
-  event.preventDefault();
+    event.preventDefault();
 
-// Assign a variable to the user input
+    // Assign a variable to the user input
 
-const value = input.value;
+    const value = input.value;
 
-// Create a new list item
+    // Create a new list item
 
-const newListItem = document.createElement('li');
+    const newListItem = document.createElement('li');
 
-// Create a span inside of the new list item
+    // Create a span inside of the new list item
 
-const newSpan = document.createElement('span');
-// Create a button to remove list items
+    const newSpan = document.createElement('span');
 
-// Add the text "remove" to the button
 
-// Add event listener to watch the remove button for clicks
+    // Create a button to remove list items
+
+
+
+    // Add the text "remove" to the button
+
+    // Add event listener to watch the remove button for clicks
 
     // target the click event
 
