@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event) {
 
     // Assign a variable to the user input
 
-    const value = input.value;
+    const toDoValue = input.value;
 
     // Create a new list item
 
@@ -25,8 +25,8 @@ form.addEventListener('submit', function(event) {
     // Create a span inside of the new list item
 
     const newSpan = document.createElement('span');
-    newSpan.textContent = newListItem;
-    newSpan.appendChild(newListItem);
+    newSpan.textContent = toDoValue;
+    newListItem.appendChild(newSpan);
 
     // Create a button to remove list items
 
@@ -34,7 +34,7 @@ form.addEventListener('submit', function(event) {
 
     // Add the text "remove" to the button
 
-    removeBtn.textContent = "remove";
+    removeBtn.textContent = "Remove";
 
     // Add event listener to watch the remove button for clicks
 
@@ -50,12 +50,19 @@ form.addEventListener('submit', function(event) {
 
     // remove list item
 
+        parent.remove();
         
 
     })
-})
+
 // add the remove button to the new list item
+
+newListItem.appendChild(removeBtn);
 
 // clear the input after submission
 
+input.value = '';
+
 // focus back to the input
+
+})
