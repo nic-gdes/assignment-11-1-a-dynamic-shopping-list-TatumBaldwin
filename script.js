@@ -32,9 +32,9 @@ form.addEventListener('submit', function(event) {
 
     const removeBtn = document.createElement('button');
 
-    // Add the text "remove" to the button
+    // Add the text  to the button
 
-    removeBtn.textContent = "Remove";
+    removeBtn.textContent = "Mark as Complete";
 
     // Add event listener to watch the remove button for clicks
 
@@ -68,5 +68,7 @@ list.appendChild(newListItem);
 input.value = '';
 
 // focus back to the input
+
+input.focus();
 
 })

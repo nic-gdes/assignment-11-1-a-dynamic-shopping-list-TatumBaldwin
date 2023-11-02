@@ -4,8 +4,19 @@
     <meta charset="utf-8">
     <title>Shopping list example</title>
     <style>
+
+        h1 {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
       li {
         margin-bottom: 10px;
+        max-width: 300px;
+        display:block;
+        text-align: right;
+        justify-self: center;
+        flex-direction: column;
+        margin: 0 auto;
+        list-style: none;
       }
 
       li button {
@@ -13,28 +24,50 @@
         margin-left: 20px;
         color: #666;
       }
+      
+      ul {
+        padding: 4rem;
+        width: 50%;
+        margin: 0 auto;
+        background-color: aliceblue;
+        border: solid 1px black;
+      }
+
+      form {
+        margin: 5%;
+      }
+
+
+      #center {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color:cornflowerblue;
+        height: 100vh;
+      }
+
     </style>
   </head>
   <body>
+    <section id="center">
+        <h1>My Shopping List</h1>
 
-    <h1>My shopping list</h1>
+        <!-- this form will allow users to post their own "todo" items -->
+        <form id="addItem">
+            <!-- This allows users to submit a new item -->
+        <label for="itemToAdd">Enter a new item:</label>
+        <input type="text" name="item" id="itemToAdd" maxlength="90">
 
-    <!-- this form will allow users to post their own "todo" items -->
-    <form id="addItem">
-        <!-- This allows users to submit a new item -->
-      <label for="itemToAdd">Enter a new item:</label>
-      <input type="text" name="item" id="itemToAdd">
+            <!-- this will submit the item to the page -->
+        <button id="submit">Add item</button>
+        </form>
 
-        <!-- this will submit the item to the page -->
-      <button id="submit">Add item</button>
-    </form>
+        <!-- the list where the user input shall appear -->
+        <ul id="list">
 
-    <ul id="list">
+        </ul>
 
-
-
-    </ul>
-
+    </section>
     <script src="./script.js">
 
     </script>
