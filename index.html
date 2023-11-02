@@ -19,13 +19,19 @@
 
     <h1>My shopping list</h1>
 
-    <div>
-      <label for="item">Enter a new item:</label>
-      <input type="text" name="item" id="item">
-      <button>Add item</button>
-    </div>
+    <!-- this form will allow users to post their own "todo" items -->
+    <form id="addItem">
+        <!-- This allows users to submit a new item -->
+      <label for="itemToAdd">Enter a new item:</label>
+      <input type="text" name="item" id="itemToAdd">
 
-    <ul>
+        <!-- this will submit the item to the page -->
+      <button id="submit">Add item</button>
+    </form>
+
+    <ul id="list">
+        <li> your mom</li>
+
 
     </ul>
 
