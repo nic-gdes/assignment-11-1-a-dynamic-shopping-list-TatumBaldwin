@@ -6,7 +6,11 @@ const input = document.querySelector('#itemToAdd');
 
 // add event listener to the form to look for clicks
 
+form.addEventListener('submit', function(event) {
+  
 // remove the function's default
+
+  event.preventDefault();
 
 // Assign a variable to the user input
 
@@ -26,6 +30,7 @@ const input = document.querySelector('#itemToAdd');
 
     // remove list item
 
+})
 // add the remove button to the new list item
 
 // clear the input after submission
